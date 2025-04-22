@@ -1,0 +1,18 @@
+<?xml version=<1.0< encoding=<ISO-8859-1<?>
+<root>
+
+	<!-- 算法参数 -->
+	<alarm>		
+		<dms>
+			<!-- 马赛克遮挡功能开关：0-关 1-开 -->
+			<otherarea_cover>1</otherarea_cover>
+			
+			<!-- 非马赛克矩形遮挡区域 -->
+			<active_rect_xs>0</active_rect_xs>
+			<active_rect_ys>0</active_rect_ys>
+			<active_rect_xe>640</active_rect_xe>
+			<active_rect_ye>720</active_rect_ye>
+		</dms>
+	</alarm>
+	
+</root>

@@ -1,0 +1,4 @@
+SettingTool path
+path指定xml文件所在目录；
+程序会自动索引目录下的xml文件解析并设置参数；
+xml文件可以多个，名称不固定，内容按照“parameters.xml”中各模块定义即可。

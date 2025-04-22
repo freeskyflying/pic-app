@@ -1,0 +1,254 @@
+<?xml version=<1.0< encoding=<ISO-8859-1<?>
+<root>
+
+	<!-- 系统参数 -->
+	<system>
+		<!-- 音量等级：0-静音 1-低 2-中 3-高 -->
+		<vol_level>1</vol_level>
+		<!-- dms算法使能：1-使能 0-关闭 -->
+		<dms_en>1</dms_en>
+		<!-- adas算法使能：1-使能 0-关闭 -->
+		<adas_en>1</adas_en>
+		<!-- 视频水印使能：1-使能 0-关闭 -->
+		<osd_en>1</osd_en>
+		<!-- 录音使能：1-使能 0-关闭 -->
+		<mic_en>1</mic_en>
+		<!-- apn设置 -->
+		<apn>
+			<name></name>
+			<name></user>
+			<name></name>
+		</apn>
+		<!-- 停车监控：1-使能 0-关闭 -->
+		<parking_monitor>0</parking_monitor>
+		<!-- 缩时录影：0-关闭 1-1帧/s 3-3帧/s 5-5帧/s -->
+		<timelapse_rate>5</timelapse_rate>
+		<!-- 超速时语音提示间隔：0-关闭 -->
+		<overspeed_report_intv>0</overspeed_report_intv>
+	</system>
+
+	<!-- FTP升级管理服务器 -->
+	<ftp_update>
+		<ip>39.108.149.82</ip>
+		<port>8021</port>
+	</ftp_update>
+	
+	<!-- 服务器参数 -->
+	<servers>
+		<!-- 服务器1 -->
+		<server>
+			<!-- 序号 -->
+			<id>1</id>
+			<!-- 服务器ip地址 -->
+			<ip>192.168.2.107</ip>
+			<!-- 服务器端口号 -->
+			<port>6608</port>
+			<!-- 设备号 -->
+			<phonenum>746573743031</phonenum>
+			<!-- 协议类型：0-jt808(2013) 1-905(2014) 2-jt808(2019) -->
+			<protocal>0</protocal>
+			<!-- 车牌号 -->
+			<platenum>粤B888888</platenum>
+			<!-- 车牌颜色：0-无 1-蓝 2-黄 3-黑 4-白 5-绿 6-其他 -->
+			<platecolor>1</platecolor>
+		</server>
+		
+		<!-- 服务器2 -->
+		<server>
+			<!-- 序号 -->
+			<id>2</id>
+			<!-- 服务器ip地址 -->
+			<ip>192.168.2.107</ip>
+			<!-- 服务器端口号 -->
+			<port>6608</port>
+			<!-- 设备号 -->
+			<phonenum>746573743032</phonenum>
+			<!-- 协议类型：0-jt808(2013) 1-905(2014) 2-jt808(2019) -->
+			<protocal>2</protocal>
+			<!-- 车牌号 -->
+			<platenum>粤B888888</platenum>
+			<!-- 车牌颜色：0-无 1-蓝 2-黄 3-黑 4-白 5-绿 6-其他 -->
+			<platecolor>1</platecolor>
+		</server>
+	</servers>
+	
+	<!-- 安装参数 -->
+	<installation>
+		<adas>
+			<!-- 天际线和车中线交叉点X坐标 单位像素 -->
+			<vanish_point_x>960</vanish_point_x>
+			<!-- //天际线和车中线交叉点Y坐标 单位像素 -->
+			<vanish_point_y>540</vanish_point_y>
+			<!-- 引擎盖线 -->
+			<bottom_line_y>700</bottom_line_y>
+			<!-- 与地面距离，单位cm -->
+			<camera_to_ground>120</camera_to_ground>
+			<!-- 与车头距离 单位cm -->
+			<car_head_to_camera>120</car_head_to_camera>
+			<!-- 车宽，单位cm -->
+			<car_width>150</car_width>
+			<!-- 与车中线距离，单位米，建议设备安装在车的中间，左负右正 -->
+			<camera_to_middle>-10</camera_to_middle>
+		</adas>
+	</installation>
+	
+	<!-- 算法参数 -->
+	<alarm>		
+		<dms>
+			<!-- 打电话报警使能：0-关闭 1-使能一级报警 2-使能二级报警 3-使能一、二级报警 -->
+			<call_enable>3</call_enable>
+			<!-- 打电话报警拍照张数 -->
+			<call_photo_count>3</call_photo_count>
+			<!-- 打电话报警拍照间隔，单位ms -->
+			<call_photo_intervel_ms>200</call_photo_intervel_ms>
+			<!-- 打电话报警视频前后拍摄时长，单位s -->
+			<call_video_time>5</call_video_time>
+			<!-- 打电话报警间隔，单位s -->
+			<call_intervel>180</call_intervel>
+			<!-- 打电话二级报警最低速度 -->
+			<call_speed_level2>50</call_speed_level2>
+			
+			<!-- 吸烟报警 -->
+			<smok_enable>3</smok_enable>
+			<smok_photo_count>3</smok_photo_count>
+			<smok_photo_intervel_ms>200</smok_photo_intervel_ms>
+			<smok_video_time>5</smok_video_time>
+			<smok_intervel>180</smok_intervel>
+			<smok_speed_level2>50</smok_speed_level2>
+			
+			<!-- 分神报警 -->
+			<dist_enable>3</dist_enable>
+			<dist_photo_count>3</dist_photo_count>
+			<dist_photo_intervel_ms>200</dist_photo_intervel_ms>
+			<dist_video_time>5</dist_video_time>
+			<dist_intervel>180</dist_intervel>
+			<dist_speed_level2>50</dist_speed_level2>
+			
+			<!-- 疲劳报警 -->
+			<fati_enable>3</fati_enable>
+			<fati_photo_count>3</fati_photo_count>
+			<fati_photo_intervel_ms>200</fati_photo_intervel_ms>
+			<fati_video_time>5</fati_video_time>
+			<fati_intervel>180</fati_intervel>
+			<fati_speed_level2>50</fati_speed_level2>
+			
+			<!-- 驾驶员异常报警 -->
+			<nodriver_enable>3</nodriver_enable>
+			<nodriver_photo_count>3</nodriver_photo_count>
+			<nodriver_photo_intervel_ms>200</nodriver_photo_intervel_ms>
+			<nodriver_video_time>5</nodriver_video_time>
+			<nodriver_intervel>180</nodriver_intervel>
+			<abnm_speed_level2>50</abnm_speed_level2>
+			
+			<!-- 遮挡镜头报警 -->
+			<cover_enable>3</cover_enable>
+			<cover_photo_count>3</cover_photo_count>
+			<cover_photo_intervel_ms>200</cover_photo_intervel_ms>
+			<cover_video_time>5</cover_video_time>
+			<cover_intervel>180</cover_intervel>
+			
+			<!-- 墨镜干扰报警 -->
+			<glass_enable>3</glass_enable>
+			<glass_photo_count>3</glass_photo_count>
+			<glass_photo_intervel_ms>200</glass_photo_intervel_ms>
+			<glass_video_time>5</glass_video_time>
+			<glass_intervel>180</glass_intervel>
+			
+			<!-- 报警使能最低速度，单位km/h -->
+			<alarm_speed>30</alarm_speed>
+			
+			<!-- 安全带检测使能 -->
+			<no_belt_en>30</no_belt_en>
+	
+			<!-- 检测灵敏度 0-off 1-low 2-mid 3-high -->
+			<fati_sensitivity>2</fati_sensitivity>
+			<dist_sensitivity>2</dist_sensitivity>
+			<smok_sensitivity>2</smok_sensitivity>
+			<call_sensitivity>2</call_sensitivity>
+			<belt_sensitivity>2</belt_sensitivity>
+			
+			<!-- 驾驶司机检测区域 -->
+			<driver_rect_topleft_x>0</driver_rect_topleft_x>
+			<driver_rect_topleft_y>0</driver_rect_topleft_y>
+			<driver_rect_botright_x>640</driver_rect_botright_x>
+			<driver_rect_botright_y>720</driver_rect_botright_y>
+			
+			<!-- 乘客上下抓拍 -->
+			<passenger_enable>1</passenger_enable>
+			<passenger_photo_cnt>1</passenger_photo_cnt>
+			
+			<!-- 报警语音间隔 -->
+			<call_voice_intervel>30</call_voice_intervel>
+			<smok_voice_intervel>30</smok_voice_intervel>
+			<dist_voice_intervel>30</dist_voice_intervel>
+			<fati_voice_intervel>30</fati_voice_intervel>
+			<nobelt_voice_intervel>30</nobelt_voice_intervel>
+			<nodriver_voice_intervel>60</nodriver_voice_intervel>
+			<glass_voice_intervel>60</glass_voice_intervel>
+			<cover_voice_intervel>60</cover_voice_intervel>	
+		</dms>
+		<adas>
+			<!-- 车道偏离报警使能：0-关闭 1-使能一级报警 2-使能二级报警 3-使能一、二级报警 -->
+			<ldw_en>3</ldw_en>
+			<!-- 车道偏离报警拍照张数 -->
+			<ldw_photo_count>3</ldw_photo_count>
+			<!-- 车道偏离报警拍照时间间隔，单位ms -->
+			<ldw_photo_intervel_ms>200</ldw_photo_intervel_ms>
+			<!-- 车道偏离报警前后录像时长，单位s -->
+			<ldw_video_time>5</ldw_video_time>
+			<!-- 车道偏离报警时间间隔，单位s -->
+			<ldw_intervel>180</ldw_intervel>
+			<!-- 车道偏离二级报警最低速度 -->
+			<ldw_speed_level2>50</ldw_speed_level2>
+			
+			<!-- 车距过近报警 -->
+			<hmw_en>3</hmw_en>
+			<hmw_photo_count>3</hmw_photo_count>
+			<hmw_photo_intervel_ms>200</hmw_photo_intervel_ms>
+			<hmw_video_time>5</hmw_video_time>
+			<hmw_intervel>180</hmw_intervel>
+			<hmw_speed_level2>50</hmw_speed_level2>
+			
+			<!-- 前向碰撞报警 -->
+			<fcw_en>3</fcw_en>
+			<fcw_photo_count>3</fcw_photo_count>
+			<fcw_photo_intervel_ms>200</fcw_photo_intervel_ms>
+			<fcw_video_time>5</fcw_video_time>
+			<fcw_intervel>180</fcw_intervel>
+			<fcw_speed_level2>50</fcw_speed_level2>
+			
+			<!-- 小心行人报警 -->
+			<pcw_en>3</pcw_en>
+			<pcw_photo_count>3</pcw_photo_count>
+			<pcw_photo_intervel_ms>200</pcw_photo_intervel_ms>
+			<pcw_video_time>5</pcw_video_time>
+			<pcw_intervel>180</pcw_intervel>
+			<pcw_speed_level2>50</pcw_speed_level2>
+			
+			<!-- 前车启动报警 -->
+			<fmw_en>3</fmw_en>
+			<fmw_photo_count>3</fmw_photo_count>
+			<fmw_photo_intervel_ms>200</fmw_photo_intervel_ms>
+			<fmw_video_time>5</fmw_video_time>
+			<fmw_intervel>180</fmw_intervel>
+			
+			<!-- 报警使能最低速度，单位km/h -->
+			<alarm_speed>30</alarm_speed>
+			
+			<!-- 检测灵敏度 0-off 1-low 2-mid 3-high -->
+			<ldw_sensitivity>2</ldw_sensitivity>
+			<hmw_sensitivity>2</hmw_sensitivity>
+			<fcw_sensitivity>2</fcw_sensitivity>
+			<pcw_sensitivity>2</pcw_sensitivity>
+			<fmw_sensitivity>2</fmw_sensitivity>
+			
+			<!-- 报警语音间隔 -->
+			<ldw_voice_intervel>60</ldw_voice_intervel>
+			<hmw_voice_intervel>60</hmw_voice_intervel>
+			<fcw_voice_intervel>30</fcw_voice_intervel>
+			<pcw_voice_intervel>30</pcw_voice_intervel>
+			<fmw_voice_intervel>60</fmw_voice_intervel>
+		</adas>
+	</alarm>
+	
+</root>
